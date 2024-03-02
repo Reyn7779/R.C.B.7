@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="link.css">
+  <style></style>
+</head>
+<body>
+  <div id="container">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  #container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  
+  #taskInput {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .taskItem {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .taskItem input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .metadata {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+  }
+  
+  .deleteButton, .editButton {
+    margin-left: 10px;
+    cursor: pointer;
+    color: blue;
+  }
+  </style>
+ <br><br>
+ <a href="index.html">home</a>
+</body>
+</html>
